@@ -1,0 +1,228 @@
+<html>
+<head>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+<script type="text/javascript" src="smooth_scroll.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+   <style>
+        html, body { margin: 0; padding: 0; }
+        body {background-color: #fcfaf6;}
+        
+	a:link {
+            color: gray;
+            font-family: Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+	    text-decoration: none;
+
+	}
+	
+	a:visited {
+  	    color: gray;
+            font-family: Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+	    text-decoration: none;
+	}
+
+	a:hover {
+	    color: gray;
+            font-family: Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+	    text-decoration: line-through;
+	}
+
+	a:active {
+ 	    color: gray;
+            font-family: Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+	    text-decoration: line-through;
+	}
+
+
+
+
+	h1.normalb{
+            color: black;
+            font-family: Grotesk-bold, Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+            letter-spacing: -8px;
+            
+        }
+        h1.normalw{
+            color: white;
+            font-family: Grotesk-bold, Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+            letter-spacing: -4px;
+        }
+        h1.impact{
+            color: gray;
+            font-family: Verdana, sans-serif;
+            display: inline;
+            font-weight: 900;
+            font-size: 120px;
+        }
+	h2.normalb{
+	    color: black;
+            font-family: Grotesk-bold, Verdana, sans-serif;
+            display: inline;
+            font-weight: 700;
+            font-size: 80px;
+            letter-spacing: -2px;
+	}	
+        p {color: red;}
+        div.home {
+            width: 90%;
+            padding-left: 5%;
+            padding-top: 100px;
+            letter-spacing: -4px;
+        }
+        div.me {
+            position: relative;
+	        width: 100%;
+	        height: 100%;
+            padding: 270px 0 50px 0;
+	        margin: 80px 0 0 0;
+	        width: 100%;
+	        height: auto;
+	        z-index: 5;
+	        position: relative;
+	        background-color: #222;
+	        overflow: hidden;
+        }
+        div.work {
+            width: 90%;
+            padding-left: 5%;
+            padding-top: 100px;
+            letter-spacing: -4px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0,80px,0);
+            }
+
+            to {
+                transform: translate3d(0,0,0);
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                transform: translate3d(0,80px,0)
+            }
+
+            to {
+                transform: translate3d(0,0,0);
+                opacity: 1
+            }
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-fill-mode: both
+        }
+
+        .animatedFadeInUp {
+            opacity: 0
+        }
+
+        .fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+        }
+        img.work{
+            width: 60%;
+            height: auto;
+	    border: 2px solid #555;
+        }
+   </style>
+   <title>Ankit Singhal</title>
+   <link rel = "icon" href = "icon.png">
+</head>
+<body>
+    <div class='animated animatedFadeInUp fadeInUp home'>
+	    <h1 class='normalb'> hi. my name is </h1> <a href='#contact'> <h1 class='impact'>ankit</h1></a> <h1 class='normalb'>. im a student involved in </h1> <a href='#nonprofit'> <h1 class='impact'>nonprofit efforts </h1></a> <!-- <h1 class='normalb'>, </h1> <h1 class='impact'>research</h1>--><h1 class='normalb'>  and <a href='#aiml'> </h1><h1 class='impact'> ai/ml development</h1></a> <h1 class="normalb">.</h1>
+    </div>
+
+
+    <div id='contact'>
+    <div class='me'>
+        <div class='home'>
+		<h1 class='normalw'>you can contact me via <a href='mailto: editor@articlefourteen.org'><h1 class = 'impact'>email </h1></a> <h1 class ='normalw'>or check out my </h1><a href='https://github.com/ankitsinghal04'><h1 class ='impact'>github</h1></a><h1 class ='normalw'>.</h1>
+        </div>
+    </div>
+    </div>
+
+    <div id='nonprofit'>
+    <div class='home'>
+        <h1 class = 'normalb'>the article 14 project.</h1>
+	<a href='https://www.articlefourteen.org'>
+	<img class="work" src="a14_screenshot.png" alt="screenshot of a14 homepage. Link: www.articlefourteen.org">
+	</a>
+    </div>
+    <div>
+
+    <div id='aiml'>
+    <div class='home'>
+        <h1 class='normalb'>Violence Prediction in South Sudan and Yemen</h1>
+    </div> 
+    </div>
+
+    <div class='home'>
+        <h1 class='normalb'>Deep Learning Techniques for RNA feature prediction</h1>
+	<p></p>	
+	<a href='https://arxiv.org/abs/2011.05136'>
+	<h2 class='normalb'>Link to arXiv paper</h2>
+	</a>
+    </div> 
+   
+
+    <!-- Put a14, violence prediction, arxiv paper, chimia paper - if you think of anymore, add it as well --!>
+</body>
+</html>
+
